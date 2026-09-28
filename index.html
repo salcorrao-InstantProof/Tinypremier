@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tiny Premier · Pregnancy announcement videos</title>
+<meta name="description" content="A short announcement film with your names and due date, made for the family's first look. $19.">
+<meta property="og:title" content="Tiny Premier">
+<meta property="og:description" content="Your news. Their reaction. Pregnancy announcement videos, $19.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231d1b26'/%3E%3Cpath d='M12 9l12 7-12 7z' fill='%23c9a14a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --cream:#f6f1e7;--paper:#fffdf8;--ink:#1d1b26;--muted:#625d6b;--line:#e3dccd;
+  --gold:#b98b2e;--gold-soft:#efe2c4;--screen:#14121b;
+  --display:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding-inline:20px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding-block:18px}
+.logo{white-space:nowrap;font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+.logo span{color:var(--gold)}
+.top a.cta-small{white-space:nowrap;font-weight:600;font-size:15px;text-decoration:none;border-bottom:2px solid var(--gold)}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:20px 56px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(46px,8vw,84px);line-height:.92;letter-spacing:.01em;margin:10px 0 18px;text-wrap:balance}
+.lede{font-size:19px;color:var(--muted);max-width:34ch;margin:0 0 26px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--cream);text-decoration:none;font-weight:600;padding:15px 26px;border-radius:999px;font-size:17px}
+.btn:hover{background:#000}
+.btn:focus-visible,.ticket a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.sub{font-size:14px;color:var(--muted);margin-top:12px}
+
+/* the screen */
+.theater{background:var(--screen);border-radius:18px;padding:14px 14px 18px;box-shadow:0 30px 60px -30px rgba(29,27,38,.55)}
+.marquee{display:flex;justify-content:space-between;align-items:center;color:var(--gold);font-family:var(--display);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:14px;padding:2px 6px 10px}
+.marquee i{font-style:normal;display:inline-flex;gap:5px}
+.marquee i b{width:6px;height:6px;border-radius:50%;background:var(--gold);opacity:.9;display:block}
+.screen{position:relative;aspect-ratio:9/16;max-height:560px;margin:0 auto;border-radius:10px;overflow:hidden;background:#0c0b10}
+.screen video{width:100%;height:100%;object-fit:cover;display:block}
+.caption{color:#a8a2b3;font-size:12.5px;text-align:center;margin-top:12px}
+
+section{padding-block:56px}
+h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(34px,5vw,48px);line-height:1;margin:0 0 28px;letter-spacing:.01em}
+
+/* tickets */
+.tickets{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ticket{position:relative;display:grid;grid-template-rows:auto 1fr auto;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:26px 26px 24px}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:26px;height:26px;border-radius:50%;background:var(--cream);border:1px solid var(--line);transform:translateY(-50%)}
+.ticket::before{left:-14px;clip-path:inset(0 0 0 50%)}
+.ticket::after{right:-14px;clip-path:inset(0 50% 0 0)}
+.ticket.featured{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+.admit{display:flex;flex-wrap:wrap;gap:2px 14px;justify-content:space-between;align-items:baseline;font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.ticket h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:32px;line-height:1;margin:4px 0 0}
+.price{font-family:var(--display);font-weight:800;font-size:44px;line-height:1}
+.ticket ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;border-top:1px dashed var(--line);padding-top:14px}
+.ticket li{padding-left:22px;position:relative}
+.ticket li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;height:9px;border-radius:2px;background:var(--gold);transform:rotate(45deg)}
+.ticket a{justify-self:start}
+.ticket .btn.light{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.ticket .btn.light:hover{background:var(--ink);color:var(--cream)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.step{border-top:3px solid var(--ink);padding-top:14px}
+.step b{font-family:var(--display);font-weight:800;font-size:22px;text-transform:uppercase;display:block;margin-bottom:6px}
+.step b::before{counter-increment:s;content:counter(s) " · ";color:var(--gold)}
+.step p{margin:0;color:var(--muted)}
+
+/* faq */
+.faq{display:grid;gap:10px;max-width:720px}
+details{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-weight:700}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 0;color:var(--muted)}
+
+.closing{text-align:center}
+.closing h2{margin-bottom:18px}
+footer{border-top:1px solid var(--line);padding-block:28px 40px;font-size:14px;color:var(--muted)}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer nav{display:flex;flex-wrap:wrap;gap:18px}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:28px;padding-top:6px}
+  .theater{max-width:360px;margin:0 auto;width:100%}
+  .tickets,.steps{grid-template-columns:1fr}
+  .logo{font-size:22px}
+  .top a.cta-small{font-size:14px}
+  section{padding-block:40px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="#">Tiny <span>Premier</span></a>
+    <a class="cta-small" href="#tickets">Get yours · $19</a>
+  </header>
+
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Pregnancy announcement films</div>
+      <h1>Your news.<br>Their reaction.</h1>
+      <p class="lede">A short announcement film with your names and due date, made for the family's first look. Send it, then watch their faces.</p>
+      <a class="btn" href="https://buy.stripe.com/14A6oGbBjaLogIcdoscMM09">Get yours · $19</a>
+      <p class="sub">In your inbox within 24 hours. Yours to keep and send forever.</p>
+    </div>
+
+    <div class="theater" aria-label="Sample video">
+      <div class="marquee"><span>Now showing</span><i aria-hidden="true"><b></b><b></b><b></b></i></div>
+      <div class="screen">
+        <video id="sample" src="premiere.mp4" poster="poster.jpg" playsinline muted loop autoplay controls preload="auto"></video>
+      </div>
+      <p class="caption">Sample: the Stork Forecast. The Brooks family is a demo.</p>
+    </div>
+  </div>
+</div>
+
+<section id="tickets">
+  <div class="wrap">
+    <h2>Pick your ticket</h2>
+    <div class="tickets">
+      <article class="ticket">
+        <div>
+          <div class="admit"><span>General admission</span><span>Admit: the family</span></div>
+          <h3>The Announcement</h3>
+        </div>
+        <div>
+          <div class="price">$19</div>
+          <ul>
+            <li>Your announcement film with your names and due date</li>
+            <li>Sized for texting and social</li>
+            <li>Delivered by email within 24 hours</li>
+          </ul>
+        </div>
+        <a class="btn light" href="https://buy.stripe.com/14A6oGbBjaLogIcdoscMM09">Get The Announcement</a>
+      </article>
+
+      <article class="ticket featured">
+        <div>
+          <div class="admit"><span>VIP</span><span>Admit: Grandma &amp; Grandpa</span></div>
+          <h3>The Grandparent Cut</h3>
+        </div>
+        <div>
+          <div class="price">$28</div>
+          <ul>
+            <li>Everything in The Announcement</li>
+            <li>A second cut made just for the grandparents, with their names on screen</li>
+            <li>Both delivered by email within 24 hours</li>
+          </ul>
+        </div>
+        <a class="btn" href="https://buy.stripe.com/14A8wO0WFcTwbnS5W0cMM0a">Get The Grandparent Cut</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><b>Tell us</b><p>At checkout, enter the names to show, the baby's last name and the due month.</p></div>
+      <div class="step"><b>We make it</b><p>Your video is made with your details and checked by a person before it goes out.</p></div>
+      <div class="step"><b>You send it</b><p>It arrives in your inbox within 24 hours. Text it to the family and get ready.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Questions</h2>
+    <div class="faq">
+      <details><summary>How do I get my video?</summary><p>By email, to the address you use at checkout, within 24 hours of your order. It's a video file you keep, so you can text it, post it or send it again whenever you like.</p></details>
+      <details><summary>What do I need to give you?</summary><p>Just three things at checkout: the names to show, the baby's last name, and the due month and year. For the Grandparent Cut, add the grandparents' names in the first box.</p></details>
+      <details><summary>What if something is spelled wrong?</summary><p>Reply to your delivery email and we'll fix it and resend it free.</p></details>
+      <details><summary>Can I get a refund?</summary><p>Yes, a full refund if your video hasn't been delivered within 24 hours, or if we can't get it right. See the <a href="policies.html#refunds">refund policy</a>.</p></details>
+      <details><summary>Who's in the video?</summary><p>The sample shows a demo family. Your video is built around your names and your due date.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2>Give them the news.</h2>
+    <a class="btn" href="https://buy.stripe.com/14A6oGbBjaLogIcdoscMM09">Get yours · $19</a>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <div class="row">
+      <span>© 2026 Tiny Premier · <a href="mailto:tinypremier@proton.me">tinypremier@proton.me</a></span>
+      <nav>
+        <a href="policies.html#refunds">Refunds</a>
+        <a href="policies.html#terms">Terms</a>
+        <a href="policies.html#privacy">Privacy</a>
+        <a href="policies.html#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
