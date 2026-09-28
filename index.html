@@ -120,7 +120,10 @@ footer nav{display:flex;flex-wrap:wrap;gap:18px}
     <div class="theater" aria-label="Sample video">
       <div class="marquee"><span>Now showing</span><i aria-hidden="true"><b></b><b></b><b></b></i></div>
       <div class="screen">
-        <video id="sample" src="premiere.mp4" poster="poster.jpg" playsinline muted loop autoplay controls preload="auto"></video>
+        <video id="sample" poster="poster.jpg" playsinline muted loop autoplay controls preload="auto">
+          <source src="premiere.mp4" type="video/mp4">
+          <source src="premiere.webm" type="video/webm">
+        </video>
       </div>
       <p class="caption">Sample: the Stork Forecast. The Brooks family is a demo.</p>
     </div>
